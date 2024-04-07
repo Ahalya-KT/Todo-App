@@ -1,18 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Filter from "../components/Filter";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-    <div>
-      <h1 className='text-2xl text-red-600'>Hello World</h1>
+    <div className="bg-black h-screen px-28 py-28">
+      <h1 className="text-white text-2xl font-bold">
+        to<span className="text-blue-600">do.</span>
+      </h1>
+
+      <div>
+        <div className=" py-5 w-2/5 ">
+          <Filter />
+        </div>
+      </div>
     </div>
-    </>
-  )
+  );
 }
 
-export default App
+export default App;
