@@ -39,10 +39,10 @@ const Task = () => {
              <div className='flex justify-between bg-gray-800 p-3 rounded-lg'>
              {todoApp.map((todo, index) => (
                <div key={index} className='flex items-center'>
-                 <p className='text-blue-500'>task</p>
-                 <div className='text-blue-500'>
+                 <p className='text-blue-500'>{todo}</p>
+                 <div className='text-blue-500 cursor-pointer'>
                    <AiFillDelete color='blue' onClick={()=>{
-                 
+                     deleteTodo(todo)
                    }} />
                  </div>  
                </div>
