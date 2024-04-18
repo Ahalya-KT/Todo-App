@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { AiFillDelete } from "react-icons/ai";
 
-const API_BASE = "http://https://todo-backend-n34f.onrender.com/todo";
+const API_BASE = "https://todo-backend-n34f.onrender.com/todo";
 
 // to post an  task
 const Task = ({ items, GetTodos,setItems }) => {
@@ -48,7 +48,7 @@ const Task = ({ items, GetTodos,setItems }) => {
 
   return (
     <div className="text-white bg-gray-950 p-11 rounded-lg">
-      <div className="flex gap-6">
+      <div className="flex gap-6 justify-between">
         <input
           type="text"
           placeholder="Enter your Task"

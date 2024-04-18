@@ -4,7 +4,7 @@ import "./App.css";
 import { useEffect, useState } from "react";
 
 
-const API_BASE = "http://https://todo-backend-n34f.onrender.com/todo";
+const API_BASE = "https://todo-backend-n34f.onrender.com/todo";
 
 function App() {
   // Add useState,we ll store items in the array
